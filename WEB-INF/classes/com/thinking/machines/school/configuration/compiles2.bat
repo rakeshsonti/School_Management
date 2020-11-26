@@ -1,0 +1,1 @@
+javac -classpath c:\uectomcat9sem5\lib\*;c:\uectomcat9sem5\webapps\styletwo\WEB-INF\lib\*;c:\uectomcat9sem5\webapps\styletwo\WEB-INF\classes;.*.java

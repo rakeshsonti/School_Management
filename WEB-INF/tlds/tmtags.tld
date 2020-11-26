@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!DOCTYPE taglib
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+        "http://java.sun.com/j2ee/dtd/web-jsptaglibrary_1_2.dtd">
+
+<!-- a tag library descriptor -->
+
+<taglib>
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>1.2</jsp-version>
+  <short-name>debug</short-name>
+  <uri>http://tomcat.apache.org/debug-taglib</uri>
+  <description>
+  Our Custom Tag    
+  </description>
+  <tag>
+    <name>Iterator</name>
+    <tag-class>com.thinking.machines.school.tags.IteratorTagHandler</tag-class>
+    <description>
+        To iterate a collection
+    </description>
+    <attribute>
+        <name>collection</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute>
+    <attribute>
+        <name>name</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute> 
+   </tag>
+   <tag>
+    <name>Equals</name>
+    <tag-class>com.thinking.machines.school.tags.EqualsTagHandler</tag-class>
+    <description>
+ EQUALS TAG
+    </description>
+    <attribute>
+        <name>leftOperand</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute>
+<attribute>
+        <name>rightOperand</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute>       
+</tag>
+
+
+
+   <tag>
+    <name>NotEquals</name>
+    <tag-class>com.thinking.machines.school.tags.NotEqualsTagHandler</tag-class>
+    <description>
+      NotEQUALS TAG
+    </description>
+    <attribute>
+        <name>leftOperand</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute>
+<attribute>
+        <name>rightOperand</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute>       
+</tag>
+
+   <tag>
+    <name>LessThan</name>
+    <tag-class>com.thinking.machines.school.tags.LessThanTagHandler</tag-class>
+    <description>
+       less than tag implemented
+    </description>
+    <attribute>
+        <name>leftOperand</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute>
+<attribute>
+        <name>rightOperand</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute>       
+</tag>
+
+
+
+   <tag>
+    <name>GreaterThan</name>
+    <tag-class>com.thinking.machines.school.tags.GreaterThanTagHandler</tag-class>
+    <description>
+        greater than tag
+    </description>
+    <attribute>
+        <name>leftOperand</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute>
+<attribute>
+        <name>rightOperand</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute>       
+</tag>
+
+
+   <tag>
+    <name>LessThanEquals</name>
+    <tag-class>com.thinking.machines.school.tags.LessThanEqualsTagHandler</tag-class>
+    <description>
+        Less than equals tag implemented
+    </description>
+    <attribute>
+        <name>leftOperand</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute>
+<attribute>
+        <name>rightOperand</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute>       
+</tag>
+   <tag>
+    <name>GreaterThanEquals</name>
+    <tag-class>com.thinking.machines.school.tags.GreaterThanEqualsTagHandler</tag-class>
+    <description>
+        For compare collection that they are equal or not
+    </description>
+    <attribute>
+        <name>leftOperand</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute>
+<attribute>
+        <name>rightOperand</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute>       
+</tag>
+
+
+   <tag>
+    <name>Contains</name>
+    <tag-class>com.thinking.machines.school.tags.ContainsTagHandler</tag-class>
+    <description>
+ Contains TAG
+    </description>
+    <attribute>
+        <name>collection</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute>
+<attribute>
+        <name>item</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute>       
+</tag>
+
+   <tag>
+    <name>DoesNotContain</name>
+    <tag-class>com.thinking.machines.school.tags.DoesNotContainTagHandler</tag-class>
+    <description>
+does not Contains TAG
+    </description>
+    <attribute>
+        <name>collection</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute>
+<attribute>
+        <name>item</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>    
+    </attribute>       
+</tag>
+
+
+</taglib>
